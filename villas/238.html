@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rain | Lohono Stays</title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Script for Login/Logout -->
+    <script src="/js/auth.js"></script>
+    
+    <!-- Custom Script to Load Navbar -->
+    <script>
+        $(function(){
+            $('#navbar').load('/navbar.html');
+        });
+    </script>
+
+    <style>
+    .container-xxxl, .container {
+        padding: 0 15px;
+    }
+
+    .shadow-custom {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .bg-light {
+        word-wrap: break-word;
+    }
+
+    .text-amenities {
+        overflow-wrap: break-word;
+    }
+
+    ul.list-unstyled li {
+        overflow-wrap: break-word;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .info-section {
+        margin-bottom: 20px;
+    }
+
+    .details-section {
+        margin-bottom: 20px;
+        min-height: 600px;
+    }
+
+    .other-info {
+        margin-bottom: 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 10px;
+        word-wrap: break-word;
+    }
+
+    .section-content {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        word-wrap: break-word;
+        padding: 0.5rem 0.5rem; /* Reduced padding for smaller box height */
+    }
+
+    .content-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .full-width-section {
+        width: 100%;
+    }
+
+    h6.fs-6 {
+        white-space: normal;
+        line-height: 1.2;
+        font-size: 1.3rem; /* Increased font size */
+    }
+
+    .section-content img {
+        width: 4rem; /* Adjust size as needed */
+        height: 4rem; /* Adjust size as needed */
+        margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+        h6.fs-6 {
+            font-size: 1rem; /* Adjust font size for smaller screens */
+        }
+
+        .section-heading {
+            font-size: 1.1rem;
+        }
+
+        .section-content {
+            padding: 0.8rem 0.4rem; /* Further reduce padding on smaller screens */
+        }
+
+        .section-content img {
+            width: 3rem; /* Adjust size for smaller screens */
+            height: 3rem; /* Adjust size for smaller screens */
+        }
+    }
+</style>
+
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="container-xxxl">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <br><h1 class="mb-3 text-primary">rain</h1>
+                <h5><img src="path/to/map-marker-icon.svg" alt="Location Icon" class="text-primary" /> <a href="https://maps.app.goo.gl/zfWAK7HhV4C5FdEB6" target="_blank">Coorg <span style="color: #0E2E50;">|</span> South </a></h5>
+                <p><strong><em>sxsdfghjk,</em></strong></p>
+            </div> 
+
+            <!-- Villa Details and House Rules Section -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Villa Details Section -->
+                    <div class="details-section shadow-custom p-4 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-heading">
+                            <h1 class="text-amenities">Villa Details</h1>
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="row g-4">
+                                <!-- General Details Cards -->
+                                
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/bedroom.svg" alt="No. of Bedrooms Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">No. of Bedrooms - <span>1</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/bed.svg" alt="No. Of Beds Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">No. Of Beds - <span>1</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/bathroos.svg" alt="No. of Bathrooms Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">No. of Bathrooms - <span>1</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/guest.svg" alt="No. of Guests Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">No. of Guests - <span>1</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/staff.svg" alt="No. of Guest Staff Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">No. of Guest Staff - <span>1</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/pool.svg" alt="Pool Configuration Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">Pool Configuration - <span>1</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/petfriendly.svg" alt="Pet Friendly Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">Pet Friendly - <span>No</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/seniorcitizen.svg" alt="Senior Citizen Friendly Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">Senior Citizen Friendly - <span>Yes</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/nosmoking.svg" alt="No Smoking Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">No Smoking - <span>No</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/spa.svg" alt="Spa Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">Spa - <span>Available</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/boardgame.svg" alt="Board Games Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">Board Games - <span>Not Available</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <img src="http://localhost:3001/img/speaker.svg" alt="Speakers Brand Icon" class="text-primary" />
+                                                <div class="text-muted ms-3">
+                                                    <h6 class="fs-6 mb-0">Speakers Brand - <span>jbl, sony</span></h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+
+                                <!-- Specific Details in One Column Each -->
+                                <div class="col-md-12">
+                                    <div class="section-heading">
+                                        <h5>Nearby Restaurants</h5>
+                                    </div>
+                                    <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <img src="http://localhost:3001/img/restaurant.svg" alt="Nearby Restaurants Icon" class="text-primary" />
+                                            <div class="text-muted ms-3">
+                                                <h6 class="fs-6 mb-0">Take It Cheesy
+The Garden of Eat’n
+Wingman’s Pub
+Kale Me Crazy</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    <div class="section-heading">
+                                        <h5>Nearby Things to Do</h5>
+                                    </div>
+                                    <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <img src="http://localhost:3001/img/things.svg" alt="Nearby Things to Do Icon" class="text-primary" />
+                                            <div class="text-muted ms-3">
+                                                <h6 class="fs-6 mb-0">Take It Cheesy
+The Garden of Eat’n
+Wingman’s Pub
+Kale Me Crazy</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    <div class="section-heading">
+                                        <h5>Nearby Villas of Isprava</h5>
+                                    </div>
+                                    <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <img src="http://localhost:3001/img/villa.svg" alt="Nearby Villas Icon" class="text-primary" />
+                                            <div class="text-muted ms-3">
+                                                <h6 class="fs-6 mb-0">Take It Cheesy
+The Garden of Eat’n
+Wingman’s Pub
+Kale Me Crazy</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    <div class="section-heading">
+                                        <h5>Nearby Beaches</h5>
+                                    </div>
+                                    <a class="d-block text-center shadow-custom p-3 rounded bg-light section-content" href="#">
+                                        <div class="d-flex align-items-center">
+                                            <img src="http://localhost:3001/img/beach.svg" alt="Nearby Beaches Icon" class="text-primary" />
+                                            <div class="text-muted ms-3">
+                                                <h6 class="fs-6 mb-0">Take It Cheesy
+The Garden of Eat’n
+Wingman’s Pub
+Kale Me Crazy</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- House Rules Section (Full Width) -->
+                    <div class="info-section shadow-custom p-4 wow fadeInUp full-width-section" data-wow-delay="0.3s">
+                        <h1 class="text-amenities">House Rules</h1>
+                        <div class="bg-light text-center rounded p-4">
+                            <ul class="list-unstyled section-content">
+                                
+                                    <li>Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.
+Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy..</li>
+                                 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Other Information -->
+                <div class="col-lg-4">
+                    <div class="info-section shadow-custom p-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <h1 class="text-amenities">Other Information</h1>
+                        <div class="bg-light text-center rounded p-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <ul class="list-unstyled section-content mb-0">
+                                    
+                                        <li>Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy.Take It Cheesy.
+The Garden of Eat’n.
+Wingman’s Pub.
+Kale Me Crazy..</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary btn-lg rounded-circle back-to-top"><img src="path/to/up-arrow-icon.svg" alt="Back to Top Icon" /></a>
+
+    <!-- Template JavaScript -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
